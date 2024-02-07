@@ -23,7 +23,8 @@ export default function RandomColor() {
   useEffect(() => {
     if (typeOfColor === "rgb") randomRgbColor();
     else randomHexColor();
-  }, [typeOfColor, color]); 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [typeOfColor]); 
   return (
     <div
       style={{
